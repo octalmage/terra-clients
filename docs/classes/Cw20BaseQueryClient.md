@@ -55,7 +55,7 @@
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:271
+[clients/Cw20BaseClient.ts:271](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L271)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:272
+[clients/Cw20BaseClient.ts:272](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L272)
 
 ## Methods
 

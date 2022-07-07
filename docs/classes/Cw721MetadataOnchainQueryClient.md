@@ -56,7 +56,7 @@
 
 #### Defined in
 
-clients/Cw721MetadataOnchainClient.ts:263
+[clients/Cw721MetadataOnchainClient.ts:263](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw721MetadataOnchainClient.ts#L263)
 
 ___
 
@@ -70,7 +70,7 @@ Cw721MetadataOnchainReadOnlyInterface.contractAddress
 
 #### Defined in
 
-clients/Cw721MetadataOnchainClient.ts:264
+[clients/Cw721MetadataOnchainClient.ts:264](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw721MetadataOnchainClient.ts#L264)
 
 ## Methods
 

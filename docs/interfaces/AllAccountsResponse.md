@@ -20,4 +20,4 @@
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:31
+[clients/Cw20BaseClient.ts:31](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L31)

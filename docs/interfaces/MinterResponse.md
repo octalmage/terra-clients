@@ -21,7 +21,7 @@
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:172
+[clients/Cw20BaseClient.ts:172](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L172)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:173
+[clients/Cw20BaseClient.ts:173](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L173)

@@ -23,7 +23,7 @@
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:181
+[clients/Cw20BaseClient.ts:181](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L181)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:182
+[clients/Cw20BaseClient.ts:182](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L182)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:183
+[clients/Cw20BaseClient.ts:183](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L183)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-clients/Cw20BaseClient.ts:184
+[clients/Cw20BaseClient.ts:184](https://github.com/octalmage/terra-clients/blob/fbc54ed/clients/Cw20BaseClient.ts#L184)
