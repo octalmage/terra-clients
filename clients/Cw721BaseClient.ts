@@ -38,7 +38,7 @@ export type Timestamp = Uint64;
 export type Uint64 = string;
 export interface AllNftInfoResponse {
   access: OwnerOfResponse;
-  info: NftInfoResponseForNullable_Metadata;
+  info: NftInfoResponseForNullable_Empty;
 }
 export interface OwnerOfResponse {
   approvals: Approval[];
@@ -48,25 +48,12 @@ export interface Approval {
   expires: Expiration;
   spender: string;
 }
-export interface NftInfoResponseForNullable_Metadata {
-  extension?: Metadata | null;
+export interface NftInfoResponseForNullable_Empty {
+  extension?: Empty | null;
   token_uri?: string | null;
 }
-export interface Metadata {
-  animation_url?: string | null;
-  attributes?: Trait[] | null;
-  background_color?: string | null;
-  description?: string | null;
-  external_url?: string | null;
-  image?: string | null;
-  image_data?: string | null;
-  name?: string | null;
-  youtube_url?: string | null;
-}
-export interface Trait {
-  display_type?: string | null;
-  trait_type: string;
-  value: string;
+export interface Empty {
+  [k: string]: unknown;
 }
 export interface ApprovalResponse {
   approval: Approval;
@@ -110,7 +97,7 @@ export type ExecuteMsg = {
     operator: string;
   };
 } | {
-  mint: MintMsgForNullable_Metadata;
+  mint: MintMsgForNullable_Empty;
 } | {
   burn: {
     token_id: string;
@@ -121,14 +108,11 @@ export type ExecuteMsg = {
   };
 };
 export type Binary = string;
-export interface MintMsgForNullable_Metadata {
-  extension?: Metadata | null;
+export interface MintMsgForNullable_Empty {
+  extension?: Empty | null;
   owner: string;
   token_id: string;
   token_uri?: string | null;
-}
-export interface Empty {
-  [k: string]: unknown;
 }
 export interface InstantiateMsg {
   minter: string;
@@ -139,7 +123,7 @@ export interface MinterResponse {
   minter: string;
 }
 export interface NftInfoResponse {
-  extension?: Metadata | null;
+  extension?: Empty | null;
   token_uri?: string | null;
 }
 export interface NumTokensResponse {
@@ -205,7 +189,7 @@ export type QueryMsgForEmpty = {
 export interface TokensResponse {
   tokens: string[];
 }
-export interface Cw721MetadataOnchainInterface {
+export interface Cw721BaseInterface {
   contractAddress: string;
   transferNft: ({
     recipient,
@@ -257,7 +241,7 @@ export interface Cw721MetadataOnchainInterface {
     tokenId,
     tokenUri
   }: {
-    extension?: Metadata;
+    extension?: Empty;
     owner: string;
     tokenId: string;
     tokenUri?: string;
@@ -273,7 +257,7 @@ export interface Cw721MetadataOnchainInterface {
     msg: Empty;
   }, funds?: Coins) => Promise<any>;
 }
-export class Cw721MetadataOnchainClient implements Cw721MetadataOnchainInterface {
+export class Cw721BaseClient implements Cw721BaseInterface {
   client: LCDClient;
   wallet: Wallet | ConnectedWallet;
   contractAddress: string;
@@ -464,7 +448,7 @@ export class Cw721MetadataOnchainClient implements Cw721MetadataOnchainInterface
     tokenId,
     tokenUri
   }: {
-    extension?: Metadata;
+    extension?: Empty;
     owner: string;
     tokenId: string;
     tokenUri?: string;
